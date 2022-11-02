@@ -28,8 +28,8 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
@@ -74,3 +74,13 @@ keymap("i", "<C-p>", "<cmd>lua require('telescope.builtin').find_files()<CR>", o
 keymap("v", "<C-p>", "<cmd>lua require('telescope.builtin').find_files()<CR>", opts)
 
 keymap("n", "<leader>g", "<cmd>lua require('telescope.builtin').live_grep()<CR>", opts)
+
+-- Nvim Tree
+keymap("n", "<C-b>", ":NvimTreeToggle<CR>", opts)
+keymap("i", "<C-b>", ":NvimTreeToggle<CR>", opts)
+keymap("v", "<C-b>", ":NvimTreeToggle<CR>", opts)
+
+-- Close files
+keymap("n", "x", ":q!<CR>", opts)
+keymap("v", "x", ":q!<CR>", opts)
+keymap("x", "x", ":q!<CR>", opts)
