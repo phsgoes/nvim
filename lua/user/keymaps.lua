@@ -81,6 +81,6 @@ keymap("i", "<C-b>", ":NvimTreeToggle<CR>", opts)
 keymap("v", "<C-b>", ":NvimTreeToggle<CR>", opts)
 
 -- Close files
-keymap("n", "x", ":q!<CR>", opts)
-keymap("v", "x", ":q!<CR>", opts)
-keymap("x", "x", ":q!<CR>", opts)
+keymap("n", "<C-q>", ":q!<CR>", opts)
+keymap("v", "<C-q>", ":q!<CR>", opts)
+keymap("x", "<C-q>", ":q!<CR>", opts)
