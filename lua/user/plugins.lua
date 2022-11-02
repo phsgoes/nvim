@@ -45,7 +45,8 @@ return packer.startup(function(use)
   use { "windwp/nvim-autopairs" }               -- Autopairs, integrates with both cmp and treesitter
   use { "kyazdani42/nvim-web-devicons" }        -- Web dev icons
   use { "kyazdani42/nvim-tree.lua" }            -- Nvim Tree
-
+  use { "akinsho/bufferline.nvim" }             -- Bufferline
+  use { "moll/vim-bbye" }                       -- BBye
 	-- Colorschemes
   use { "folke/tokyonight.nvim" }
   use { "savq/melange" }

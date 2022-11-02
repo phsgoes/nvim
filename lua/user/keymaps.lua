@@ -72,15 +72,16 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<C-p>", "<cmd>lua require('telescope.builtin').find_files()<CR>", opts)
 keymap("i", "<C-p>", "<cmd>lua require('telescope.builtin').find_files()<CR>", opts)
 keymap("v", "<C-p>", "<cmd>lua require('telescope.builtin').find_files()<CR>", opts)
-
+keymap("x", "<C-p>", "<cmd>lua require('telescope.builtin').find_files()<CR>", opts)
 keymap("n", "<leader>g", "<cmd>lua require('telescope.builtin').live_grep()<CR>", opts)
 
 -- Nvim Tree
 keymap("n", "<C-b>", ":NvimTreeToggle<CR>", opts)
 keymap("i", "<C-b>", ":NvimTreeToggle<CR>", opts)
 keymap("v", "<C-b>", ":NvimTreeToggle<CR>", opts)
+keymap("x", "<C-b>", ":NvimTreeToggle<CR>", opts)
 
 -- Close files
-keymap("n", "<C-q>", ":q!<CR>", opts)
-keymap("v", "<C-q>", ":q!<CR>", opts)
-keymap("x", "<C-q>", ":q!<CR>", opts)
+keymap("n", "<C-w>", ":Bdelete!<CR>", opts)
+keymap("v", "<C-w>", ":Bdelete!<CR>", opts)
+keymap("x", "<C-w>", ":Bdelete!<CR>", opts)
