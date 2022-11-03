@@ -139,6 +139,16 @@ _G.packer_plugins = {
     path = "/home/paulo/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
     url = "https://github.com/folke/lsp-colors.nvim"
   },
+  ["lualine-lsp-progress"] = {
+    loaded = true,
+    path = "/home/paulo/.local/share/nvim/site/pack/packer/start/lualine-lsp-progress",
+    url = "https://github.com/arkav/lualine-lsp-progress"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/paulo/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   melange = {
     loaded = true,
     path = "/home/paulo/.local/share/nvim/site/pack/packer/start/melange",
