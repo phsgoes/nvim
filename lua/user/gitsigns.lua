@@ -17,15 +17,23 @@ gitsigns.setup {
   numhl = false, -- Toggle with `:Gitsigns toggle_numhl`
   linehl = false, -- Toggle with `:Gitsigns toggle_linehl`
   word_diff = false, -- Toggle with `:Gitsigns toggle_word_diff`
+  keymaps = {
+    noremap  = true,
+    ["n <leader>hb"] = "<cmd>lua require('gitsigns').blame_line(true)<CR>",
+    ["n <leader>hs"] = "<cmd>lua require('gitsigns').stage_hunk()<CR>",
+    ["v <leader>hs"] = "<cmd>lua require('gitsigns').stage_hunk({vim.fn.line('.'), vim.fn.line('v')})<CR>",
+    ["n <leader>hu"] = "<cmd>lua require('gitsigns').undo_stage_hunk()<CR>",
+    ["v <leader>hu"] = "<cmd>lua require('gitsigns').reset_hunk({vim.fn.line('.'), vim.fn.line('v')})<CR>",
+  },
   watch_gitdir = {
     interval = 1000,
     follow_files = true,
   },
   attach_to_untracked = true,
-  current_line_blame = false, -- Toggle with `:Gitsigns toggle_current_line_blame`
+  current_line_blame = true, -- Toggle with `:Gitsigns toggle_current_line_blame`
   current_line_blame_opts = {
     virt_text = true,
-    virt_text_pos = "eol", -- 'eol' | 'overlay' | 'right_align'
+    virt_text_pos = "right_align", -- 'eol' | 'overlay' | 'right_align'
     delay = 1000,
     ignore_whitespace = false,
   },

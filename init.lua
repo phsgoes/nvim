@@ -1,16 +1,17 @@
-require "user.settings"
-require "user.keymaps"
-require "user.colorscheme"
-require "user.plugins"
-require "user.bufferline"
-require "user.cmp"
-require "user.autopairs"
-require "user.lspconfig"
-require "user.lspcolors"
-require "user.telescope"
-require "user.comment"
-require "user.nvim-tree"
-require "user.treesitter"
-require "user.gitsigns"
-require "user.lualine"
-require "user.lualine.lualine-lsp-progress"
+require("user.settings")
+require("user.keymaps")
+require("user.colorscheme")
+require("user.plugins")
+require("user.bufferline")
+require("user.cmp")
+require("user.autopairs")
+require("user.lspconfig")
+require("user.lspcolors")
+require("user.telescope")
+require("user.comment")
+require("user.nvim-tree")
+require("user.treesitter")
+require("user.gitsigns")
+require("user.lualine")
+require("user.lualine.lualine-lsp-progress")
+require("user.null-ls")
